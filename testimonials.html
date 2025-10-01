@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials - Go Pains Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header class="glass-header">
+        <button class="hamburger-menu" aria-label="Open menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="logo-container">
+            <button class="logo-btn" onclick="window.location.href='index.html'" aria-label="Go to Home">
+                <img src="images/logo.png" alt="Go Pains Go Logo" class="logo">
+            </button>
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌓</span>
+        </button>
+    </header>
+
+    <div id="side-menu" class="side-menu glass-panel">
+        <button class="close-side-menu" aria-label="Close menu">&times;</button>
+        <nav class="side-menu-nav">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="nav-link">
+                <span class="nav-icon">ℹ️</span>
+                <span>About</span>
+            </a>
+            <a href="products.html" class="nav-link">
+                <span class="nav-icon">🛒</span>
+                <span>Products</span>
+            </a>
+            <a href="testimonials.html" class="nav-link">
+                <span class="nav-icon">⭐</span>
+                <span>Testimonials</span>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="testimonials-hero">
+            <div class="section-content">
+                <h1 class="section-title">Customer Success Stories</h1>
+                <p class="section-subtitle">Real people, real results. See how Go Pains Go has helped transform lives.</p>
+                
+                <!-- Stats -->
+                <div class="stats-row">
+                    <div class="stat-item glass-panel">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-item glass-panel">
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-item glass-panel">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Would Recommend</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Testimonials -->
+        <section class="video-testimonials">
+            <div class="section-content">
+                <h2 class="section-title">Video Reviews</h2>
+                <p class="section-subtitle">Hear directly from our customers</p>
+                
+                <div class="video-grid">
+                    <div class="video-card glass-panel">
+                        <div class="video-container">
+                            <video controls poster="images/video-thumb1.jpg">
+                                <source src="videos/video1.mp4" type="video/mp4">
+                                Your browser does not support video playback.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-button">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Sarah's Relief Story</h3>
+                            <p>"After years of carpal tunnel pain from computer work..."</p>
+                            <div class="video-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">5.0 out of 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card glass-panel">
+                        <div class="video-container">
+                            <video controls poster="images/video-thumb2.jpg">
+                                <source src="videos/video2.mp4" type="video/mp4">
+                                Your browser does not support video playback.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-button">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Mike's Recovery Journey</h3>
+                            <p>"As a construction worker, joint pain was affecting my work..."</p>
+                            <div class="video-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">5.0 out of 5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-card glass-panel">
+                        <div class="video-container">
+                            <video controls poster="images/video-thumb3.jpg">
+                                <source src="videos/video3.mp4" type="video/mp4">
+                                Your browser does not support video playback.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-button">▶</div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Emma's Daily Comfort</h3>
+                            <p>"This cream has become an essential part of my routine..."</p>
+                            <div class="video-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-text">5.0 out of 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Written Reviews -->
+        <section class="written-reviews">
+            <div class="section-content">
+                <h2 class="section-title">Customer Reviews</h2>
+                <div class="reviews-filter">
+                    <button class="filter-btn active" data-filter="all">All Reviews</button>
+                    <button class="filter-btn" data-filter="5">5 Stars</button>
+                    <button class="filter-btn" data-filter="4">4+ Stars</button>
+                    <button class="filter-btn" data-filter="recent">Most Recent</button>
+                </div>
+                
+                <div class="reviews-grid" id="reviews-grid">
+                    <!-- Review cards will be populated here -->
+                </div>
+                
+                <div class="load-more-container">
+                    <button class="load-more-btn glass-panel" id="load-more-reviews">
+                        <span>Load More Reviews</span>
+                        <span class="load-spinner">⟳</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Form -->
+        <section class="review-form-section">
+            <div class="section-content">
+                <div class="review-form-container glass-panel">
+                    <h2>Share Your Experience</h2>
+                    <p>Help others discover the relief you've found. Your story matters.</p>
+                    
+                    <form class="review-form" id="review-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reviewer-name">Your Name</label>
+                                <input type="text" id="reviewer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewer-email">Email (optional)</label>
+                                <input type="email" id="reviewer-email" name="email">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-used">Product Used</label>
+                            <select id="product-used" name="product" required>
+                                <option value="">Select a product</option>
+                                <option value="premium-cream">Premium Pain Relief Cream</option>
+                                <option value="cooling-gel">Cooling Muscle Gel</option>
+                                <option value="healing-balm">Therapeutic Healing Balm</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Your Rating</label>
+                            <div class="star-rating" id="star-rating">
+                                <span class="star" data-rating="1">☆</span>
+                                <span class="star" data-rating="2">☆</span>
+                                <span class="star" data-rating="3">☆</span>
+                                <span class="star" data-rating="4">☆</span>
+                                <span class="star" data-rating="5">☆</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="review-title">Review Title</label>
+                            <input type="text" id="review-title" name="title" placeholder="Summarize your experience" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="review-text">Your Review</label>
+                            <textarea id="review-text" name="review" rows="6" 
+                                placeholder="Tell us about your experience. How has our product helped you?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn primary-btn">
+                            <span class="btn-text">Submit Review</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-panel">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>info@gopainsgo.com</p>
+            </div>
+            
+            <div class="footer-section footer-copyright">
+                <p>&copy; 2025 Go Pains Go</p>
+                <p class="small-text">Website by Alessandro Corona Webservices Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Testimonials page specific styles */
+        .testimonials-hero {
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            text-align: center;
+            min-width: 180px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient-alt);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Video Section */
+        .video-testimonials {
+            padding: 6rem 2rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .video-card {
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover .video-overlay {
+            opacity: 1;
+        }
+
+        .play-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        .video-info {
+            padding: 1.5rem;
+        }
+
+        .video-info h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .video-info p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .video-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stars {
+            color: #ffc107;
+        }
+
+        .rating-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Reviews Section */
+        .written-reviews {
+            padding: 6rem 2rem;
+            background: var(--glass);
+        }
+
+        .reviews-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--border);
+            background: var(--glass);
+            color: var(--text-secondary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .reviewer-info h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .review-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+
+        .review-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .review-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .review-product {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        /* Review Form */
+        .review-form-section {
+            padding: 6rem 2rem;
+        }
+
+        .review-form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .review-form-container h2 {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .review-form-container p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .review-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: left;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .star-rating {
+            display: flex;
+            gap: 0.25rem;
+            font-size: 1.5rem;
+        }
+
+        .star {
+            cursor: pointer;
+            color: #ddd;
+            transition: color 0.2s ease;
+        }
+
+        .star:hover,
+        .star.active {
+            color: #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .stats-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        // Sample review data
+        const sampleReviews = [
+            {
+                name: "Jennifer M.",
+                rating: 5,
+                title: "Life-changing relief!",
+                text: "After struggling with chronic wrist pain from my desk job, this cream has been a game-changer. The pain relief is almost instant and lasts for hours.",
+                product: "Premium Pain Relief Cream",
+                date: "2024-12-15"
+            },
+            {
+                name: "Robert K.",
+                rating: 5,
+                title: "Works better than prescription options",
+                text: "I was skeptical about natural products, but this exceeded all my expectations. Better than the expensive prescription creams I was using.",
+                product: "Therapeutic Healing Balm",
+                date: "2024-12-10"
+            },
+            {
+                name: "Maria L.",
+                rating: 4,
+                title: "Great for post-workout recovery",
+                text: "The cooling gel is perfect after intense workouts. Reduces inflammation and helps me recover faster. Will definitely reorder.",
+                product: "Cooling Muscle Gel",
+                date: "2024-12-08"
+            },
+            {
+                name: "David T.",
+                rating: 5,
+                title: "Finally found something that works",
+                text: "Tried countless products for my arthritis pain. This is the first one that provides real, lasting relief without harsh chemicals.",
+                product: "Premium Pain Relief Cream",
+                date: "2024-12-05"
+            }
+        ];
+
+        // Populate reviews
+        function displayReviews(reviews) {
+            const reviewsGrid = document.getElementById('reviews-grid');
+            reviewsGrid.innerHTML = '';
+            
+            reviews.forEach(review => {
+                const reviewCard = document.createElement('div');
+                reviewCard.className = 'review-card';
+                reviewCard.innerHTML = `
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>${review.name}</h4>
+                            <div class="review-date">${new Date(review.date).toLocaleDateString()}</div>
+                        </div>
+                        <div class="review-rating">${'⭐'.repeat(review.rating)}</div>
+                    </div>
+                    <div class="review-title">${review.title}</div>
+                    <div class="review-text">${review.text}</div>
+                    <div class="review-product">${review.product}</div>
+                `;
+                reviewsGrid.appendChild(reviewCard);
+            });
+        }
+
+        // Star rating functionality
+        function setupStarRating() {
+            const stars = document.querySelectorAll('.star');
+            let selectedRating = 0;
+            
+            stars.forEach((star, index) => {
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    updateStars(selectedRating);
+                });
+                
+                star.addEventListener('mouseover', () => {
+                    updateStars(index + 1);
+                });
+            });
+            
+            document.querySelector('.star-rating').addEventListener('mouseleave', () => {
+                updateStars(selectedRating);
+            });
+            
+            function updateStars(rating) {
+                stars.forEach((star, index) => {
+                    star.textContent = index < rating ? '★' : '☆';
+                    star.classList.toggle('active', index < rating);
+                });
+            }
+        }
+
+        // Review form submission
+        function setupReviewForm() {
+            const form = document.getElementById('review-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const stars = document.querySelectorAll('.star.active');
+                const rating = stars.length;
+                
+                if (rating === 0) {
+                    alert('Please select a rating');
+                    return;
+                }
+                
+                // Simulate form submission
+                const submitBtn = this.querySelector('.submit-btn');
+                submitBtn.innerHTML = '<span class="btn-text">Submitting...</span>';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<span class="btn-text">Thank You!</span> <span class="btn-arrow">✓</span>';
+                    submitBtn.style.background = '#10B981';
+                    
+                    setTimeout(() => {
+                        this.reset();
+                        document.querySelectorAll('.star').forEach(star => {
+                            star.textContent = '☆';
+                            star.classList.remove('active');
+                        });
+                        submitBtn.innerHTML = '<span class="btn-text">Submit Review</span> <span class="btn-arrow">→</span>';
+                        submitBtn.style.background = '';
+                        submitBtn.disabled = false;
+                    }, 2000);
+                }, 1000);
+            });
+        }
+
+        // Filter functionality
+        function setupFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filter = btn.dataset.filter;
+                    let filteredReviews = sampleReviews;
+                    
+                    if (filter === '5') {
+                        filteredReviews = sampleReviews.filter(r => r.rating === 5);
+                    } else if (filter === '4') {
+                        filteredReviews = sampleReviews.filter(r => r.rating >= 4);
+                    } else if (filter === 'recent') {
+                        filteredReviews = [...sampleReviews].sort((a, b) => new Date(b.date) - new Date(a.date));
+                    }
+                    
+                    displayReviews(filteredReviews);
+                });
+            });
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            displayReviews(sampleReviews);
+            setupStarRating();
+            setupReviewForm();
+            setupFilters();
+            
+            // Video play button functionality
+            document.querySelectorAll('.video-overlay').forEach(overlay => {
+                overlay.addEventListener('click', () => {
+                    const video = overlay.previousElementSibling;
+                    if (video && video.tagName === 'VIDEO') {
+                        video.play();
+                        overlay.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Pains Go - Natural Pain Relief</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header class="glass-header">
+        <button class="hamburger-menu" aria-label="Open menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="logo-container">
+            <button class="logo-btn" onclick="window.location.href='index.html'" aria-label="Go to Home">
+                <img src="images/logo.png" alt="Go Pains Go Logo" class="logo">
+            </button>
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌓</span>
+        </button>
+    </header>
+
+    <div id="side-menu" class="side-menu glass-panel">
+        <button class="close-side-menu" aria-label="Close menu">&times;</button>
+        <nav class="side-menu-nav">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="nav-link">
+                <span class="nav-icon">ℹ️</span>
+                <span>About</span>
+            </a>
+            <a href="products.html" class="nav-link">
+                <span class="nav-icon">🛒</span>
+                <span>Products</span>
+            </a>
+            <a href="testimonials.html" class="nav-link">
+                <span class="nav-icon">⭐</span>
+                <span>Testimonials</span>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content glass-panel">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-highlight">Go Pains Go</span>
+                        <span class="title-subtitle">Natural Relief, Proven Results</span>
+                    </h1>
+                    <p class="hero-description">
+                        Professional-grade massage cream designed for carpal tunnel relief, 
+                        muscle pain, and everyday comfort. Crafted with natural ingredients 
+                        for fast-absorbing, long-lasting relief.
+                    </p>
+                    <button class="cta-button primary-btn" onclick="scrollToRetailers()">
+                        <span class="btn-text">Shop Now</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="float-element float-1"></div>
+                        <div class="float-element float-2"></div>
+                        <div class="float-element float-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="retailers" class="retailers-section">
+            <div class="section-content glass-panel">
+                <h2 class="section-title">Available At</h2>
+                <p class="section-subtitle">Choose your preferred retailer</p>
+                
+                <div class="retailer-grid">
+                    <button class="retailer-card amazon" data-url="https://amazon.com">
+                        <div class="retailer-icon">📦</div>
+                        <span class="retailer-name">Amazon</span>
+                        <div class="retailer-arrow">→</div>
+                    </button>
+                    
+                    <button class="retailer-card walmart" data-url="https://walmart.com">
+                        <div class="retailer-icon">🛍️</div>
+                        <span class="retailer-name">Walmart</span>
+                        <div class="retailer-arrow">→</div>
+                    </button>
+                    
+                    <button class="retailer-card target" data-url="https://target.com">
+                        <div class="retailer-icon">🎯</div>
+                        <span class="retailer-name">Target</span>
+                        <div class="retailer-arrow">→</div>
+                    </button>
+                    
+                    <button class="retailer-card costco" data-url="https://costco.com">
+                        <div class="retailer-icon">🏪</div>
+                        <span class="retailer-name">Costco</span>
+                        <div class="retailer-arrow">→</div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-content">
+                <h2 class="section-title">Why Choose Go Pains Go?</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass-panel">
+                        <div class="feature-icon">🌿</div>
+                        <h3>Natural Ingredients</h3>
+                        <p>Botanical extracts and time-tested natural compounds</p>
+                    </div>
+                    <div class="feature-card glass-panel">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Absorption</h3>
+                        <p>Non-greasy formula penetrates deep for quick relief</p>
+                    </div>
+                    <div class="feature-card glass-panel">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Targeted Relief</h3>
+                        <p>Specially formulated for repetitive strain and daily stress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-panel">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>info@gopainsgo.com</p>
+            </div>
+            
+            <div class="footer-section footer-copyright">
+                <p>&copy; 2025 Go Pains Go</p>
+                <p class="small-text">Website by Alessandro Corona Webservices Inc.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

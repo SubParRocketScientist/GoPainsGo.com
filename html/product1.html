@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1 - Go Pains Go</title>
+    <link id="theme-link" rel="stylesheet" href="../css/style-light.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <button class="hamburger-menu" aria-label="Open menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div style="width:100%; display:flex; justify-content:center; align-items:center;">
+            <button class="logo-btn" onclick="window.location.href='../index.html'" aria-label="Go to Home">
+                <img src="../images/logo.png" alt="Go Pains Go Logo" class="logo">
+            </button>
+        </div>
+    </header>
+    <!-- Side menu overlay -->
+    <div id="side-menu" class="side-menu">
+        <button class="close-side-menu" aria-label="Close menu">&times;</button>
+        <nav class="side-menu-nav">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../products.html">Products</a>
+            <a href="../testimonials.html">Testimonials</a>
+        </nav>
+    </div>
+    <main class="centered-container">
+        <div class="product-showcase">
+            <h1>Product 1</h1>
+            <img src="../images/products/IMG_8412.jpg" alt="Product 1" style="max-width:300px; border-radius:10px; margin-bottom:20px;">
+            <p>Description for Product 1 goes here. Add details, ingredients, usage instructions, and any other relevant information.</p>
+            <button class="buy-now" onclick="window.location.href='../products.html'">Back to Products</button>
+        </div>
+    </main>
+    <div class="footer-divider"></div>
+    <footer class="site-footer">
+        <div class="footer-left">
+            <div class="footer-links">
+                <a href="../index.html">Home</a><br>
+                <a href="../about.html">About</a><br>
+                <a href="../testimonials.html">Testimonials</a><br>
+                <a href="../products.html">Products</a><br>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 Go Pains Go<br>
+                Website made by Alessandro Corona Webservices Inc.<br>
+                &copy; 2025 Alessandro Corona Webservices Inc.
+            </div>
+        </div>
+        <div class="footer-right">
+            <button id="theme-toggle" class="footer-theme-toggle">Toggle Dark Mode</button>
+        </div>
+    </footer>
+</body>
+</html>

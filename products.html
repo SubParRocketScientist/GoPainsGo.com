@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Go Pains Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header class="glass-header">
+        <button class="hamburger-menu" aria-label="Open menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="logo-container">
+            <button class="logo-btn" onclick="window.location.href='index.html'" aria-label="Go to Home">
+                <img src="images/logo.png" alt="Go Pains Go Logo" class="logo">
+            </button>
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌓</span>
+        </button>
+    </header>
+
+    <div id="side-menu" class="side-menu glass-panel">
+        <button class="close-side-menu" aria-label="Close menu">&times;</button>
+        <nav class="side-menu-nav">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="about.html" class="nav-link">
+                <span class="nav-icon">ℹ️</span>
+                <span>About</span>
+            </a>
+            <a href="products.html" class="nav-link">
+                <span class="nav-icon">🛒</span>
+                <span>Products</span>
+            </a>
+            <a href="testimonials.html" class="nav-link">
+                <span class="nav-icon">⭐</span>
+                <span>Testimonials</span>
+            </a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="section-content">
+                <h1 class="section-title">Our Products</h1>
+                <p class="section-subtitle">Discover our complete range of natural pain relief solutions</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="section-content">
+                <!-- Product Search & Filter -->
+                <div class="product-controls glass-panel">
+                    <div class="search-container">
+                        <input type="text" id="product-search" placeholder="Search products..." class="search-input">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    <div class="filter-container">
+                        <select id="product-filter" class="filter-select">
+                            <option value="all">All Products</option>
+                            <option value="cream">Creams</option>
+                            <option value="gel">Gels</option>
+                            <option value="balm">Balms</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="product-grid" id="product-grid">
+                    
+                    <!-- SAMPLE PRODUCT TEMPLATE - COPY THIS STRUCTURE FOR EACH PRODUCT -->
+                    <div class="product-card" data-category="cream" data-name="premium pain relief cream">
+                        <div class="product-image-container">
+                            <img src="images/products/sample-product.jpg" alt="Premium Pain Relief Cream" class="product-image">
+                            <div class="product-badge">Best Seller</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Premium Pain Relief Cream</h3>
+                            <p class="product-price">$24.99</p>
+                            <p class="product-description">Advanced formula with natural botanicals for deep muscle relief and joint comfort.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Natural</span>
+                                <span class="feature-tag">Fast-Acting</span>
+                                <span class="feature-tag">Non-Greasy</span>
+                            </div>
+                            <button class="product-btn primary-btn" data-product-url="https://your-store-link.com/product1">
+                                <span class="btn-text">Buy Now</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- END SAMPLE PRODUCT TEMPLATE -->
+
+                    <!-- Example Additional Products (using the same template structure) -->
+                    <div class="product-card" data-category="gel" data-name="cooling muscle gel">
+                        <div class="product-image-container">
+                            <img src="images/products/cooling-gel.jpg" alt="Cooling Muscle Gel" class="product-image">
+                            <div class="product-badge new">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cooling Muscle Gel</h3>
+                            <p class="product-price">$19.99</p>
+                            <p class="product-description">Instant cooling relief for sore muscles and inflammation with menthol and eucalyptus.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">Cooling</span>
+                                <span class="feature-tag">Menthol</span>
+                                <span class="feature-tag">Quick Relief</span>
+                            </div>
+                            <button class="product-btn primary-btn" data-product-url="https://your-store-link.com/product2">
+                                <span class="btn-text">Buy Now</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="balm" data-name="therapeutic healing balm">
+                        <div class="product-image-container">
+                            <img src="images/products/healing-balm.jpg" alt="Therapeutic Healing Balm" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Therapeutic Healing Balm</h3>
+                            <p class="product-price">$29.99</p>
+                            <p class="product-description">Concentrated healing balm with CBD and arnica for targeted pain relief.</p>
+                            <div class="product-features">
+                                <span class="feature-tag">CBD</span>
+                                <span class="feature-tag">Arnica</span>
+                                <span class="feature-tag">Targeted</span>
+                            </div>
+                            <button class="product-btn primary-btn" data-product-url="https://your-store-link.com/product3">
+                                <span class="btn-text">Buy Now</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Add more products using the same template... -->
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn glass-panel" id="load-more">
+                        <span>Load More Products</span>
+                        <span class="load-spinner">⟳</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Information Section -->
+        <section class="product-info-section">
+            <div class="section-content">
+                <div class="info-grid">
+                    <div class="info-card glass-panel">
+                        <div class="info-icon">🚚</div>
+                        <h3>Free Shipping</h3>
+                        <p>Free shipping on orders over $50</p>
+                    </div>
+                    <div class="info-card glass-panel">
+                        <div class="info-icon">↩️</div>
+                        <h3>30-Day Returns</h3>
+                        <p>Not satisfied? Return within 30 days</p>
+                    </div>
+                    <div class="info-card glass-panel">
+                        <div class="info-icon">🔒</div>
+                        <h3>Secure Checkout</h3>
+                        <p>SSL encrypted secure payments</p>
+                    </div>
+                    <div class="info-card glass-panel">
+                        <div class="info-icon">✅</div>
+                        <h3>Quality Guarantee</h3>
+                        <p>Tested for purity and effectiveness</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-panel">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="testimonials.html">Testimonials</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>info@gopainsgo.com</p>
+            </div>
+            
+            <div class="footer-section footer-copyright">
+                <p>&copy; 2025 Go Pains Go</p>
+                <p class="small-text">Website by Alessandro Corona Webservices Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('product-search');
+            const filterSelect = document.getElementById('product-filter');
+            const productGrid = document.getElementById('product-grid');
+            const productCards = productGrid.querySelectorAll('.product-card');
+
+            // Search functionality
+            searchInput.addEventListener('input', filterProducts);
+            filterSelect.addEventListener('change', filterProducts);
+
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = filterSelect.value;
+
+                productCards.forEach(card => {
+                    const productName = card.dataset.name.toLowerCase();
+                    const productCategory = card.dataset.category;
+                    
+                    const matchesSearch = productName.includes(searchTerm);
+                    const matchesCategory = selectedCategory === 'all' || productCategory === selectedCategory;
+                    
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-in');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Product button clicks
+            document.querySelectorAll('.product-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const url = this.dataset.productUrl;
+                    if (url) {
+                        window.open(url, '_blank', 'noopener,noreferrer');
+                    }
+                });
+            });
+
+            // Load more functionality (simulated)
+            const loadMoreBtn = document.getElementById('load-more');
+            loadMoreBtn.addEventListener('click', function() {
+                this.classList.add('loading');
+                setTimeout(() => {
+                    this.classList.remove('loading');
+                    // Here you would load more products
+                }, 1000);
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional product page styles */
+        .page-hero {
+            padding: 6rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .product-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .search-container {
+            display: flex;
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 25px 0 0 25px;
+            background: var(--glass);
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .search-btn {
+            padding: 0.75rem 1rem;
+            background: var(--primary);
+            border: none;
+            border-radius: 0 25px 25px 0;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .filter-select {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            background: var(--glass);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .product-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .product-badge.new {
+            background: var(--accent);
+        }
+
+        .product-features {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .feature-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .product-btn {
+            width: 100%;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .load-more-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .load-more-btn {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .load-more-btn.loading .load-spinner {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .product-info-section {
+            padding: 4rem 2rem;
+            background: var(--glass);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .product-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-container {
+                max-width: none;
+            }
+        }
+    </style>
+</body>
+</html>
